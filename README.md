@@ -13,55 +13,41 @@ This project implements a REST API for a Product Catalog System using FastAPI an
 
 *Manage Catalogs (add and search).*
 
-# Folder Structure
-product_catalog_system/
-├── app/
-│   ├── __init__.py
-│   ├── models/
-│   │   ├── __init__.py
-│   │   ├── product.py
-│   │   ├── catalog.py
-│   ├── services/
-│   │   ├── __init__.py
-│   │   ├── product_service.py
-│   │   ├── catalog_service.py
-│   ├── routers/
-│   │   ├── __init__.py
-│   │   ├── product_router.py
-│   │   ├── catalog_router.py
-│   ├── main.py
-├── requirements.txt
-
 #  Project Details
 
-# Models
+## Models
 
-Product:
+### Product:
 
-product_id: Unique identifier for the product.
+- *product_id:* Unique identifier for the product.
 
-name: Name of the product.
+- *name:* Name of the product.
 
-catalog_id: Identifier for the associated catalog.
+- *catalog_id:* Identifier for the associated catalog.
 
-description: Optional description of the product.
+- *description:* Optional description of the product.
 
-price: Price of the product.
+- *price:* Price of the product.
 
-Catalog:
+### Catalog:
 
-catalog_id: Unique identifier for the catalog.
+- *catalog_id:* Unique identifier for the catalog.
 
-name: Name of the catalog.
+- *name:* Name of the catalog.
 
-Services
+## Services
 
-ProductService: Handles CRUD operations for products.
+- *ProductService:* Handles CRUD operations for products.
 
-CatalogService: Handles catalog operations.
+- *CatalogService:* Handles catalog operations.
 
-Routers
+## Routers
 
-Product Router: Defines product-related API endpoints.
+- *Product Router:* Defines product-related API endpoints.
 
-Catalog Router: Defines catalog-related API endpoints.
+- *Catalog Router:* Defines catalog-related API endpoints.
+
+# Dependencies
+- ### FastAPI
+
+- ### Uvicorn
